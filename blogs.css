@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lilita+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: black;
+  background-color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  color: #fff;
+  background-image: url("./images/blog.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: -60%;
+}
+
+#blogPage {
+  width: 100%;
+  padding: 2vw 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 10vw;
+}
+
+.left {
+  background-color: transparent;
+  padding-left: 5%;
+}
+.left img {
+  width: 3.5vw;
+}
+
+.right {
+  background-color: transparent;
+  font-size: 1vw;
+  display: flex;
+  gap: 3vw;
+}
+.right h3 {
+  cursor: pointer;
+}
+
+.right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.heading h1 {
+  font-size: 5vw;
+  text-decoration: solid;
+  font-weight: 700;
+}
+.heading h2 {
+  font-size: 1.5vw;
+  text-decoration: solid;
+  font-weight: 700;
+}
+
+.blog {
+  width: 80%;
+  height: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  gap: 3vw;
+  margin-top: 3%;
+  border-radius: 10px;
+  padding-right: 2%;
+}
+.banner img {
+  height: 100%;
+  width: 23vw;
+  object-fit: cover;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.blog-content h2 {
+  font-size: 1.5vw;
+}
+.blog-content p {
+  font-size: 1vw;
+  width: 80%;
+}
+.blog-content p a {
+  color: #fff;
+}
+.blog-content p span {
+  text-decoration: underline;
+}
+.blog-content a {
+  font-size: 1vw;
+  font-weight: 600;
+  align-self: end;
+  margin-right: 5%;
+  color: #91def6;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .heading h1 {
+    font-size: 9vw;
+    text-decoration: solid;
+    font-weight: 700;
+  }
+  .heading h2 {
+    font-size: 4vw;
+    text-decoration: solid;
+    font-weight: 700;
+    margin-bottom: 5%;
+  }
+
+  .blog {
+    width: 95%;
+    height: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    gap: 3vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding-right: 2%;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45vw;
+  }
+  .banner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 0vw 2vw;
+  }
+
+  .blog-content h2 {
+    font-size: 3.5vw;
+  }
+  .blog-content p {
+    font-size: 2.7vw;
+    width: 100%;
+  }
+  .blog-content p a {
+    color: #fff;
+  }
+  .blog-content p span {
+    text-decoration: underline;
+  }
+  .blog-content a {
+    font-size: 2.5vw;
+    font-weight: 600;
+    align-self: end;
+    margin-right: 5%;
+    color: #91def6;
+    text-decoration: none;
+  }
+}

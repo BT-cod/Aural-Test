@@ -48,11 +48,18 @@ body {
   display: flex;
   gap: 3vw;
 }
+.right h3{
+ cursor: pointer;
+}
+.right a{
+ color: #fff;
+ text-decoration: none;
+}
 
 #home {
   width: 100%;
-  min-height: 100vh;
-  background-image: url("./home.png");
+  height: calc(100%-100px);
+  background-image: url("./images/home.png");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position-y: 50%;
@@ -115,7 +122,7 @@ body {
 
 #home1 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   color: aliceblue;
   display: flex;
@@ -174,7 +181,7 @@ body {
 
 #home2 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   color: aliceblue;
   display: flex;
@@ -245,7 +252,7 @@ body {
 
 #home3 {
   width: 100%;
-  min-height: 100vh;
+ height: 100vh;
   position: relative;
   color: aliceblue;
   display: flex;
@@ -331,11 +338,11 @@ body {
   }
   #home {
     width: 100%;
-    min-height: 100vh;
-    background-image: url("./home.png");
+    height: fit-content;
+    background-image: url("./images/home.png");
     background-repeat: no-repeat;
     background-size: 120%;
-    background-position-y: -50%;
+    background-position-y: -450%;
     background-position-x: center;
     background-blend-mode: lighten;
     color: aliceblue;
@@ -345,6 +352,7 @@ body {
     text-align: center;
     padding-left: 0%;
     padding-bottom: 0%;
+    margin-bottom: 10%;
   }
 
   #home h1 {
@@ -394,13 +402,13 @@ body {
 
   #home1 {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     position: relative;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -70%;
+    margin-bottom: 10%;
   }
 
   #home1 h2 {
@@ -458,13 +466,13 @@ body {
   }
   #home2 {
     width: 100%;
-    min-height: 100vh;
+    height: fit-content;
     position: relative;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -30%;
+    margin-top: 0%;
   }
   
   #home2 h2 {
@@ -537,13 +545,14 @@ body {
   
   #home3 {
     width: 100%;
-    min-height: 100vh;
+    height: fit-content;
     position: relative;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -100%;
+    margin-top: 10%;
+    padding-bottom: 40%;
   }
   
   #home3 h2 {
@@ -602,7 +611,9 @@ body {
     margin-top: 5%;
   }
   .h3images img {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     padding: 0vw;
   }
 }

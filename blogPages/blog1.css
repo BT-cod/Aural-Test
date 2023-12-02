@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lilita+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: black;
+  background-color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  color: #fff;
+  background-image: url("../images/blog.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: -60%;
+}
+
+#blogPage {
+  width: 100%;
+  padding: 2vw 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 10vw;
+}
+
+.left {
+  background-color: transparent;
+  padding-left: 5%;
+}
+.left img {
+  width: 3.5vw;
+}
+
+.right {
+  background-color: transparent;
+  font-size: 1vw;
+  display: flex;
+  gap: 3vw;
+}
+.right h3 {
+  cursor: pointer;
+}
+
+.right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+  padding: 2vw 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  align-items: center;
+}
+.heading h1 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+.heading p {
+  font-size: 1vw;
+  font-weight: 700;
+  padding-left: 50%;
+}
+.heading p a {
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 2vw 10vw;
+}
+
+.content p {
+  font-size: 1.5vw;
+  margin-bottom: 3%;
+}
+.content img {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 65vw;
+}
+.content h3 {
+  font-size: 2.5vw;
+  margin-top: 2%;
+}
+
+.footer {
+  width: 90%;
+}
+.footer h1 {
+  padding-left: 8%;
+  font-size: 2vw;
+}
+.author-card {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  overflow: hidden;
+}
+.author-card img {
+  width: 14vw;
+  object-fit: cover;
+}
+.author-card p {
+  font-size: 1.5vw;
+}
+
+.about-author {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2vw;
+  padding: 0vw 3vw;
+}
+
+.about-author a {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  #main {
+    width: 100%;
+    padding: 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    align-items: center;
+  }
+  .heading h1 {
+    font-size: 5vw;
+    font-weight: 900;
+  }
+  .heading p {
+    font-size: 2vw;
+    font-weight: 700;
+    padding-left: 40%;
+    padding-top: 2%;
+  }
+  .heading p a {
+    color: #fff;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 2vw 5vw;
+  }
+
+  .content p {
+    font-size: 3.5vw;
+    margin-bottom: 3%;
+  }
+  .content img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 85vw;
+  }
+  .content h3 {
+    font-size: 4vw;
+    font-weight: 900;
+    margin-top: 2%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+  .footer h1 {
+    padding-left: 8%;
+    font-size: 4vw;
+  }
+  .author-card {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    overflow: hidden;
+  }
+  .author-card img {
+    width: 30vw;
+    object-fit: cover;
+  }
+  .author-card p {
+    font-size: 3vw;
+  }
+
+  .about-author {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3vw;
+    padding: 0vw 3vw;
+  }
+
+  .about-author a {
+    color: #fff;
+  }
+}
